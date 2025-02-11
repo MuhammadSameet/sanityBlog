@@ -2,6 +2,7 @@
 import { ulForr } from '@/sanity/lib/image'
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
 
 const Hero = ({data}:{data:Blog}) => {
@@ -14,10 +15,12 @@ const Hero = ({data}:{data:Blog}) => {
     <div className="flex flex-wrap -m-4 ">
       <div className="">
         <div className="h-[500px] w-[350px] border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img
+          <Image
             className="lg:h-48 md:h-36 w-full object-cover object-center"
             src={ulForr(data.image).url()}
             alt="blog"
+            width={800}
+            height={800}
           />
           <div className="p-6">
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
