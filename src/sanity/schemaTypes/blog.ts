@@ -1,5 +1,5 @@
 "use client"
-import {defineField, defineType,defineArrayMember} from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 
 export const blog = defineType( {

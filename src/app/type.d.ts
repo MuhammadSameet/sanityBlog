@@ -3,8 +3,8 @@ type Blog ={
     title: ReactI18NextChildren | Iterable<ReactI18NextChildren>
     Title: string,
     Paragraph: string,
-    image: any,
+    image: string,
     slug: string,
-    block:String
+    block:string,
 
 }
